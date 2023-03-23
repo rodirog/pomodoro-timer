@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #FFFFFF;
+
+  display: grid;
+  place-items: center;
+  
+  min-height: 100vh;
+}
+
+main {
+  padding: 5rem 7rem 12rem 7rem;
+}
+
+.timer {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12.6rem;
+  line-height: 14.7rem;
+  color: #323238;
+  
+  display: flex;
+
+  margin-top: 8rem;
+}
+
+.controls {
+  display: flex;
+  gap: 4rem;
+
+  margin-bottom: 8rem;
+}
+
+.hide {
+  display: none;
+}
+
+button {
+  background: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+.cards {
+  display: grid;
+  grid-template-areas: 
+  "A B"
+  "C D";
+  grid-gap: 3.2rem;
+
+  max-width: 30.8rem;
+}
+
+.card hide {
+  display: none
+}
+
+.card {
+  cursor: pointer;
+}
+
+.card.forest-off {
+  animation: rightdown 1300ms;
+}
+
+.card.rain-off {
+  animation: leftdown 1300ms;
+}
+
+.card.coffee-shop-off {
+  animation: leftup 1300ms;
+}
+
+.card.fireplace-off {
+  animation: rightup 1300ms;
+}
+
+.remove-animation {
+  animation: none !important;
+}
+
+.card > :nth-child(1) {
+  grid-area: A;
+}
+.card > :nth-child(2) {
+  grid-area: B;
+}
+.card > :nth-child(3) {
+  grid-area: C;
+}
+.card > :nth-child(4) {
+  grid-area: D;
+}
+
+@keyframes rightdown { 
+    0% {
+      opacity: 0;
+      transform: translateY(-50px) translateX(-50px); 
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0) translateX(0);
+    }
+}
+
+@keyframes leftdown { 
+  0% {
+    opacity: 0;
+    transform: translateY(-50px) translateX(50px); 
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) translateX(0);
+  }
+}
+
+@keyframes leftup { 
+  0% {
+    opacity: 0;
+    transform: translateY(50px) translateX(-50px); 
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) translateX(0);
+  }
+}
+
+@keyframes rightup { 
+  0% {
+    opacity: 0;
+    transform: translateY(50px) translateX(50px); 
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) translateX(0);
+  }
+}
+
+@media (min-width: 800px) {
+  
+  body {
+    padding: 2rem 0 0 0;
+  }
+
+  main {
+    display: flex;
+    gap: 19.2rem;
+    align-items: flex-end;
+  }
+}
