@@ -3,7 +3,7 @@
 
 
 ## 💻 Project
-A Pomodoro timer with background sounds recreated from an existing Figma design
+A responsive Pomodoro timer with background sounds recreated from an existing Figma design
 
 - Visit the [project online](https://rodirog.github.io/pomodoro-timer/)
 
