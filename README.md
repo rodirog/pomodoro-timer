@@ -1,4 +1,4 @@
-# Pomodoro timer
+# 🕒 Pomodoro timer
 ![ezgif com-gif-maker (2)](https://github.com/rodirog/pomodoro-timer/assets/101756238/ca3c5a32-9892-4fc4-9494-fd9c1e831a6b)
 
 
